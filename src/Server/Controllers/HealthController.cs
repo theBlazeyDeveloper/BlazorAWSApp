@@ -6,9 +6,8 @@ namespace BlazorAWSApp.Server.Controllers
     [ApiController]
     public class HealthController : ControllerBase
     {
-        public HealthController()
-        {
-        }
+        public HealthController() : base()
+        { }
 
         [HttpGet]
         public IActionResult Index() => Ok("App is in good shape!");
